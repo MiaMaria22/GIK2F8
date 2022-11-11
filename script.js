@@ -39,6 +39,7 @@ function searchBooks (searchTerm) {
 searchBooks('oliver')
 
 function renderBookList (list) {
+    /* Element i HTML-listan visas/döljs beroende på listans innehåll */
     console.log(list);
 
 }
