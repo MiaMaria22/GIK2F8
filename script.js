@@ -14,12 +14,17 @@ const bookList = [
     }
 ];
 
-const searchInput = null;
+/*const searchInput = document.children[0].children[1].children[1].children[1];*/
+const searchField = document.getElementById('searchField');
+console.log(searchField);
+
+/* keydown, keyup */
+searchField.addEventListener('keyup', handleKeyPress);
 
 
 
-function handleKeyPress (input) {
-    searchBooks(input);
+function handleKeyPress (e) {
+    searchBooks(e.target.value);
 }
 
 function searchBooks (searchTerm) {
@@ -35,10 +40,11 @@ function searchBooks (searchTerm) {
 
 }
 
-handleKeyPress('Ham');
+
 
 function renderBookList (list) {
     /* Element i HTML-listan visas/döljs beroende på listans innehåll */
+   
     console.log(list);
 
 }
